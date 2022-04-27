@@ -17,6 +17,8 @@ layout: default
 
     {%- if posts.size > 0 -%}
 
+    <hr>
+
     <!-- tag list -->
     {% for tag in site.tags %}
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
