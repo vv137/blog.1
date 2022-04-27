@@ -4,11 +4,11 @@ description: >-
   Minsoo Kim's journal archive
 baseurl: "/blog"
 url: "https://vv137.github.io"
-github_username: vv137
 
 minima:
   date_format: "%Y-%m-%d"
-  social_links: #
+  social_links:
+    github: vv137
 
 header_pages:
   - about.md
