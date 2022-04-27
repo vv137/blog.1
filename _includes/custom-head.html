@@ -3,3 +3,43 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- tag-select -->
+<script>
+    function filterByTagName(tagName) {
+        const hiddens = document.querySelectorAll('.hidden').forEach((elem) => { elem.classList.remove('hidden') })
+
+        document.querySelectorAll('.post-wrapper').forEach((elem) => {
+            const tag_children = elem.querySelectorAll('.tag');
+            let hasTag = false;
+            for (const tc of tag_children) {
+                if (tc.textContent == tagName) {
+                    hasTag = true;
+                    break;
+                }
+            }
+            if (!hasTag) {
+                elem.classList.add('hidden');
+            }
+        });
+
+        document.querySelectorAll(`.tag`).forEach((elem) => { elem.classList.remove('selected'); });
+        document.querySelectorAll(`.tag[data-tag="${tagName}"]`).forEach((elem) => { elem.classList.add('selected'); });
+    }
+
+    const ready = (callback) => {
+        if (document.readyState != "loading") {
+            callback();
+        } else {
+            document.addEventListener("DOMContentLoaded", callback);
+        }
+    }
+
+    ready(function () {
+        const buttons = document.querySelectorAll("[data-tag]");
+        for (const button of buttons) {
+            button.addEventListener('click', function (event) {
+                currentTag = event.target.dataset.tag;
+                filterByTagName(currentTag);
+            })
+        }
+    })
+</script>

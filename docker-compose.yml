@@ -2,11 +2,12 @@ version: '3'
 services:
   site:
     container_name: my_blog
-    command: jekyll serve --host "0.0.0.0" --config "_config.yml,_config_docker.yml" --livereload
+    command: jekyll serve --host "0.0.0.0" --config "_config.yml,_config_docker.yml" --livereload --watch
     image: jekyll/jekyll
     volumes:
       - .:/srv/jekyll
     ports:
       - 4000:4000
+      - 35729:35729
     environment:
       - JEKYLL_ENV=docker
