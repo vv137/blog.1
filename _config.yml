@@ -6,7 +6,16 @@ baseurl: "/blog"
 url: "https://vv137.github.io"
 github_username: vv137
 
+minima:
+  date_format: "%Y-%m-%d"
+  social_links: #
+
+header_pages:
+  - about.md
+
 # Build settings
 theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
