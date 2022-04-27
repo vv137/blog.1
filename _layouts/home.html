@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="home">
     {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -8,6 +9,35 @@ layout: default
 
     {{ content }}
 
+    {% assign posts = site.posts %}
 
+    {%- if posts.size > 0 -%}
+
+    <!-- tag list -->
+
+    <hr>
+
+    {%- if page.list_title -%}
+    <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+
+    <ul class="post-list">
+        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
+        {%- for post in posts -%}
+        {%- if post.hidden != true -%}
+        <li class="post-wrapper">
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            <!-- post tag list -->
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+    </ul>
+
+    {%- endif -%}
 
 </div>

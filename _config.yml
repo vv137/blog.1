@@ -1,7 +1,7 @@
-title: Minsoo Kim's Blog
+title: Minsoo Kim's Journal Archive
 email: minsookim9@gmail.com
-description: >-
-  Minsoo Kim's journal archive
+# description: >-
+#   Minsoo Kim's journal archive
 baseurl: "/blog"
 url: "https://vv137.github.io"
 
