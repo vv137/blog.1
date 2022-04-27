@@ -42,7 +42,9 @@ layout: default
                     {{ post.title | escape }}
                 </a>
             </h3>
+            {% if post.show_excerpt == true %}
             {{ post.excerpt }}
+            {% endif %}
             <!-- post tag list -->
             {% if post.tags %}
             {% for tag in post.tags %}
