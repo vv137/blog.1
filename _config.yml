@@ -21,3 +21,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+repository: "vv137/blog"
+comments:
+  provider: utterances
+  utterances:
+    theme: "github-light"
+    issue_term: "pathname"
