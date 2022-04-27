@@ -3,7 +3,7 @@ email: minsookim9@gmail.com
 description: >-
   Minsoo Kim's journal archive.
 baseurl: "/blog"
-url: "https://vv137.github.io"
+url: "https://vv137.github.io/"
 github_username: vv137
 
 # Build settings
