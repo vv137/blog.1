@@ -12,7 +12,7 @@ span.tag {
   padding: 5px;
   font-size: 0.75rem;
   color: white;
-  background-color: #ef6faa;
+  background-color: hsl(200, 80%, 69%);
   opacity: 0.6;
   cursor: pointer;
   line-height: 2;
@@ -20,7 +20,7 @@ span.tag {
 }
 
 span.selected {
-  background-color: #b90659 !important;
+  background-color: hsl(200, 94%, 37%) !important;
 }
 
 li.hidden {
@@ -140,7 +140,7 @@ h6:hover .header-link {
 // 형광펜
 .half_HL {
   // background-color: #fdd1a6;
-  background: linear-gradient(to top, #fde6a6 60%, transparent 50%);
+  background: linear-gradient(to top, #fdd1a6 60%, transparent 50%);
 }
 
 .light-margin {
