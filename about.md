@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-About myself.
+CV will be updated.
