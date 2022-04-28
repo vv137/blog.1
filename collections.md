@@ -4,6 +4,8 @@ title: Collections
 permalink: /collections/
 ---
 
+---
+
 ## Physics
 
 ### Classical Mechanics
@@ -31,3 +33,5 @@ permalink: /collections/
 ---
 
 ## Computer Simulation
+
+---
