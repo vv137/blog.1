@@ -16,6 +16,8 @@ header_pages:
   - collections.md
   - links.md
 
+# show_excerpts: false
+
 # Build settings
 theme: minima
 
