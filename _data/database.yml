@@ -3,3 +3,5 @@ db:
     en: "Minsoo Kim"
     ko: ""
   avatar: "profile.png" # Place a picture inside /assets/images/ folder and provide the name of the file below.
+
+  email: "minsookim9@gmail.com"
