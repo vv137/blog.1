@@ -5,7 +5,9 @@
 <!-- tag-select -->
 <script>
     function filterByTagName(tagName) {
-        const hiddens = document.querySelectorAll('.hidden').forEach((elem) => { elem.classList.remove('hidden') })
+        const hiddens = document.querySelectorAll('.hidden').forEach((elem) => {
+            elem.classList.remove('hidden')
+        })
 
         document.querySelectorAll('.post-wrapper').forEach((elem) => {
             const tag_children = elem.querySelectorAll('.tag');
@@ -21,8 +23,12 @@
             }
         });
 
-        document.querySelectorAll(`.tag`).forEach((elem) => { elem.classList.remove('selected'); });
-        document.querySelectorAll(`.tag[data-tag="${tagName}"]`).forEach((elem) => { elem.classList.add('selected'); });
+        document.querySelectorAll(`.tag`).forEach((elem) => {
+            elem.classList.remove('selected');
+        });
+        document.querySelectorAll(`.tag[data-tag="${tagName}"]`).forEach((elem) => {
+            elem.classList.add('selected');
+        });
     }
 
     const ready = (callback) => {

@@ -61,10 +61,10 @@ layout: default
         <ul class="pagination">
             {% if paginator.previous_page %}
             <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{
-                    paginator.previous_page }}</a></li>
+                paginator.previous_page }}</a></li>
             {% else %}
             <li>
-                <div class="pager-edge"> - </div>
+                <div class="pager-edge"> -</div>
             </li>
             {% endif %}
             <li>
@@ -75,7 +75,7 @@ layout: default
             </li>
             {% else %}
             <li>
-                <div class="pager-edge"> - </div>
+                <div class="pager-edge"> -</div>
             </li>
             {% endif %}
         </ul>
